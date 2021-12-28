@@ -112,3 +112,4 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
 TW_Y_OFFSET := 70
 TW_H_OFFSET := -70
+TW_HAS_EDL_MODE := true
