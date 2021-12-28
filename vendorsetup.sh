@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_toco-userdebug
-add_lunch_combo omni_toco-eng
+add_lunch_combo twrp_toco-userdebug
+add_lunch_combo twrp_toco-eng

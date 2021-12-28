@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_toco.mk
+     $(LOCAL_DIR)/twrp_toco.mk
