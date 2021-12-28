@@ -33,6 +33,6 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 PRODUCT_DEVICE := toco
 PRODUCT_NAME := omni_toco
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi
+PRODUCT_MODEL := Mi Note 10 Lite
 PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_RELEASE_NAME := Xiaomi Xiaomi
+PRODUCT_RELEASE_NAME := Xiaomi Mi Note 10 Lite
