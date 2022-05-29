@@ -22,6 +22,9 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/commonsys-intf/display
+
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
