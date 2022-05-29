@@ -27,5 +27,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_PACKAGES += \
     qcom_decrypt \
-    qcom_decrypt_fbe
+    qcom_decrypt_fbe \
+    fastbootd \
+    android.hardware.fastboot@1.0-impl-mock
 
