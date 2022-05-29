@@ -18,3 +18,7 @@
 
 LOCAL_PATH := device/xiaomi/toco
 
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
