@@ -20,6 +20,8 @@ LOCAL_PATH := device/xiaomi/toco
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
