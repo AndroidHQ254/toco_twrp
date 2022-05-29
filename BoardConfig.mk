@@ -16,6 +16,8 @@
 # limitations under the License.
 #
 
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 DEVICE_PATH := device/xiaomi/toco
 
 # For building with minimal manifest
@@ -72,7 +74,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 134217728 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -98,9 +99,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
-#TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_SOURCE := kernel/xiaomi/toco
-#TARGET_KERNEL_CONFIG := toco_defconfig
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
@@ -137,8 +135,8 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
-TW_Y_OFFSET := 70
-TW_H_OFFSET := -70
+TW_Y_OFFSET := 71
+TW_H_OFFSET := -71
 TW_HAS_EDL_MODE := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
