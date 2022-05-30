@@ -118,6 +118,12 @@ BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product vendor system system_ext 
 BOARD_ROOT_EXTRA_FOLDERS := bluetooth dsp firmware persist
 BOARD_SUPPRESS_SECURE_ERASE := true
 
+# PBRP specific build flags
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+PB_DEVICE_RATIO := "19.5:9"
+
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno618
@@ -157,3 +163,6 @@ TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
 TW_INCLUDE_RESETPROP := true
 TW_EXCLUDE_APEX := true
+
+# Vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true

@@ -42,6 +42,3 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 PRODUCT_COPY_FILES += \
     $(OUT_DIR)/target/product/toco/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
-# Vibrator
-TW_SUPPORT_INPUT_AIDL_HAPTICS := true
-

@@ -17,6 +17,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/twrp_toco.mk
+     $(LOCAL_DIR)/omni_toco.mk
 
-COMMON_LUNCH_CHOICES := twrp_toco-eng
+COMMON_LUNCH_CHOICES := omni_toco-eng
