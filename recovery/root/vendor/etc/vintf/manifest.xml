@@ -3,7 +3,7 @@
         manifest.xml
         manifest.xml
         manifest_ds.xml
-        manifest_km4.xml
+        manifest_km41.xml
         c2_manifest.xml
 -->
 <manifest version="2.0" type="device" target-level="4">
@@ -100,12 +100,12 @@
     <hal format="hidl">
         <name>android.hardware.keymaster</name>
         <transport>hwbinder</transport>
-        <version>4.0</version>
+        <version>4.1</version>
         <interface>
             <name>IKeymasterDevice</name>
             <instance>default</instance>
         </interface>
-        <fqname>@4.0::IKeymasterDevice/default</fqname>
+        <fqname>@4.1::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.c2</name>
