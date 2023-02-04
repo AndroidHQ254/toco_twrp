@@ -50,6 +50,7 @@ service vibratorfeature-hal /system/bin/vendor.xiaomi.hardware.vibratorfeature-s
     onrestart restart vibratorfeature
 
 on init
+    start systemcheck
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
 
@@ -79,3 +80,10 @@ on boot
     start overrideprops
     start vendor.qti.vibrator
     setprop sys.usb.config adb
+
+service systemcheck /system/bin/systemcheck.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
