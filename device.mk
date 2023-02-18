@@ -36,6 +36,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libxml2 \
     libicuuc \
     libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
     vendor.display.config@1.0 \
     vendor.display.config@2.0
 
