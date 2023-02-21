@@ -55,14 +55,16 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export FOX_USE_TAR_BINARY=1
 	export FOX_USE_SED_BINARY=1
 	export FOX_USE_XZ_UTILS=1
-	export OF_ENABLE_LPTOOLS
+	export OF_ENABLE_LPTOOLS=1
+	export FOX_USE_NANO_EDITOR=1
 	export OF_QUICK_BACKUP_LIST="/boot;/data;"
 	export OF_PATCH_AVB20=1
 	export FOX_DELETE_AROMAFM=1
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 	export FOX_ENABLE_APP_MANAGER=0
+	export OF_IGNORE_LOGICAL_MOUNT_ERRORS=1
 	export OF_FBE_METADATA_MOUNT_IGNORE=1
-	export OF_FIX_DECRYPTION_ON_DATA_MEDIA
+	export OF_FIX_DECRYPTION_ON_DATA_MEDIA=1
 	
 	# OTA
 	export OF_KEEP_DM_VERITY=1
@@ -76,6 +78,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_STATUS_INDENT_LEFT=48
 	export OF_STATUS_INDENT_RIGHT=48
 	export OF_CLOCK_POS=1
+
+	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
+	export OF_UNBIND_SDCARD_F2FS=1
 
 	# R12.1 Settings
 	export FOX_VERSION="R12.1"
