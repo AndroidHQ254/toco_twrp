@@ -85,7 +85,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_UNBIND_SDCARD_F2FS=1
 
 	# R12.1 Settings
-	export FOX_VERSION="R12.1"
+	export FOX_VERSION="R14.0"
 	export OF_MAINTAINER="DennisMurimi"
 
 	# let's see what are our build VARs
