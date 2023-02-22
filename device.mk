@@ -50,7 +50,7 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
 
 # Properties
-TW_OVERRIDE_SYSTEM_PROPS := \
+#TW_OVERRIDE_SYSTEM_PROPS := \
     "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
 # Vibrator
