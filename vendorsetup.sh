@@ -84,6 +84,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# ensure that /sdcard is bind-unmounted before f2fs data repair or format
 	export OF_UNBIND_SDCARD_F2FS=1
 
+	# ensure that /data is always formatted to f2fs
+	export OF_FORCE_DATA_FORMAT_F2FS=1
+
 	# R12.1 Settings
 	export FOX_VERSION="R14.0"
 	export OF_MAINTAINER="DennisMurimi"
