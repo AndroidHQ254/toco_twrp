@@ -88,6 +88,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# ensure that /data is always formatted to f2fs
 	export OF_FORCE_DATA_FORMAT_F2FS=1
 
+	# number of list options before scrollbar creation
+	export OF_OPTIONS_LIST_NUM=9
+
 	# R12.1 Settings
 	export FOX_VERSION="R14.0"
 	export OF_MAINTAINER="DennisMurimi"
