@@ -91,6 +91,9 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# number of list options before scrollbar creation
 	export OF_OPTIONS_LIST_NUM=9
 
+	# build all the partition tools
+	export OF_ENABLE_ALL_PARTITION_TOOLS=1
+
 	# R12.1 Settings
 	export FOX_VERSION="R14.0"
 	export OF_MAINTAINER="DennisMurimi"
