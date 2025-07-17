@@ -94,8 +94,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# build all the partition tools
 	export OF_ENABLE_ALL_PARTITION_TOOLS=1
 
-	# R12.1 Settings
-	export FOX_VERSION="R14.0"
+	# Maintainer
 	export OF_MAINTAINER="DennisMurimi"
 
 	# let's see what are our build VARs
